@@ -8,9 +8,11 @@ def find_max_value(array)
   
   while array[counter] do
     if max_val < array[counter]
-      
+      max_val = array[counter]
     end
+    counter += 1
   end
+  max_val
 end
 
 def find_min_value(array)
